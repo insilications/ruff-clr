@@ -193,8 +193,8 @@ rest_pat_in_fully_bound_structs = "warn"
 # and runtime performance[1].
 #
 # [1]: https://github.com/astral-sh/ruff/pull/9031
-lto = "thin"
-codegen-units = 16
+lto = "fat"
+codegen-units = 1
 
 # Some crates don't change as much but benefit more from
 # more expensive optimization passes, so we selectively
